@@ -1,0 +1,43 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+body {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+}
+
+#wrapper{
+  width: 500px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: teal;
+}
+
+.library, .queue {
+  background-color: #484848;
+  border-radius: 2px;
+  font-size: 24px;
+  padding: 5px;
+}
+
+.songtitle {
+  cursor: pointer;
+  color: #CC9933;
+}
+
+.like {
+  cursor: pointer;
+}
+
+.like.pressed{
+  color: yellow;
+  font-weight:bold;
+}
+
+.dislike {
+  cursor: pointer;
+}
+
+.dislike.pressed {
+  color: black;
+  font-weight:bold;
+}

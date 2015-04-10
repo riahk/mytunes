@@ -3,6 +3,7 @@
   <body>
     <!-- Scripts may be placed anywhere on a page. But FYI, they block rendering of elements
      below them until after the scripts load-->
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="bower_components/jquery/jquery.min.js"></script>
     <script src="bower_components/underscore/underscore.js"></script>
     <script src="bower_components/backbone/backbone.js"></script>
@@ -30,8 +31,9 @@
         var appView = new AppView({model: app});
 
         // put the view onto the screen
-        $('body').append(appView.render());
+        $('#wrapper').append(appView.render());
       });
     </script>
+    <div id= "wrapper"></div>
   </body>
 </html>

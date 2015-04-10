@@ -13,7 +13,9 @@ var AppView = Backbone.View.extend({
     }, this);
 
     this.playerView.on('ended', function() {
+      debugger;
       this.model.get('songQueue').dequeue(this.model.get('currentSong'));
+      this.model.get('songQueue').playFirst();
       this.model.set('currentSong', this.model.get('songQueue').at(0));
     }, this);
   },
